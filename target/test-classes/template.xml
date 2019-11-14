@@ -1,0 +1,23 @@
+<body>
+  <head>
+    {{ orders as order {
+    <li>{order.id}<li>
+    } }}
+  </head>
+<li>
+{{ data.array as data { 
+  <ul> {data.id} </ul>
+  <ul> {data.name} </ul>
+  <item>
+    {{data.values as item {
+    <ul> {item.price} </ul>
+    <stores>
+      {{item.stores as store {
+      <ul> {store.name} </ul>
+      } }}
+    </stores>
+    } }}
+  </item>
+} }}
+</li>
+</body>

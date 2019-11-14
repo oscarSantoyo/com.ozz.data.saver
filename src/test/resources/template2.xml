@@ -1,0 +1,1 @@
+<body><li>{{ data.array as data { <ul> {data.id} </ul><ul> {data.name} </ul>} }}</li></body>
